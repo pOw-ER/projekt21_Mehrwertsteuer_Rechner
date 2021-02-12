@@ -20,9 +20,9 @@
     </div>
     <div>
       <p>Mehrwertsteuersatz</p>
-      <input type="radio" name="prozent" id="prozent19" value="prozent19">
+      <input type="radio" name="prozent" id="prozent19" onchange="changeKlasse()" value="prozent19">
       <label for="prozent19">19 %</label>
-      <input type="radio" name="prozent" id="prozent7" value="prozent7">
+      <input type="radio" name="prozent" id="prozent7" onchange="changeKlasse()" value="prozent7">
       <label for="prozent7">7 %</label>
     </div>
     <div>
@@ -35,11 +35,15 @@
     </div>
     <div>
       <p>Mehrwertsteuerbetrag</p>
-      <h3 id="mwst-betrag"></h3>
+      <div>
+        <span id="mwst-betrag"></span> €
+      </div>
     </div>
     <div>
       <p id="result-parg">Bruttobetrag (Endpreis)</p>
-      <h3 id="brutto-netto-betrag"></h3>
+      <div>
+        <span id="brutto-netto-betrag"></span> €
+      </div>
     </div>
   </section>
   <script src="assets/js/main.js"></script>
